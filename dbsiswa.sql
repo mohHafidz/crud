@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 21, 2021 at 03:33 AM
+-- Generation Time: Jun 09, 2021 at 08:28 AM
 -- Server version: 10.4.18-MariaDB
 -- PHP Version: 8.0.3
 
@@ -24,34 +24,38 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `posiswa`
+-- Table structure for table `dsiswa`
 --
 
-CREATE TABLE `posiswa` (
+CREATE TABLE `dsiswa` (
   `ID` int(11) NOT NULL,
-  `name` varchar(255) NOT NULL,
-  `age` int(11) NOT NULL,
-  `skills` varchar(255) NOT NULL,
-  `desgination` varchar(255) NOT NULL,
-  `address` text NOT NULL
+  `nis` varchar(155) NOT NULL,
+  `nama` varchar(100) NOT NULL,
+  `tanggal` date NOT NULL,
+  `jurusan` varchar(20) NOT NULL,
+  `agama` varchar(20) NOT NULL,
+  `alamat` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `posiswa`
+-- Dumping data for table `dsiswa`
 --
 
-INSERT INTO `posiswa` (`ID`, `name`, `age`, `skills`, `desgination`, `address`) VALUES
-(1, 'hafidz', 16, 'javascript', 'web', 'taman yasmin'),
-(13, 'muhammad hafidz', 16, 'javascript', 'web', 'taman yasmin');
+INSERT INTO `dsiswa` (`ID`, `nis`, `nama`, `tanggal`, `jurusan`, `agama`, `alamat`) VALUES
+(6, '343411', 'papay', '2021-06-04', 'RPL', 'islam', 'yasmin'),
+(7, '141342', 'arul', '2004-02-04', 'RPL', 'islam', 'bogor'),
+(9, '12314', 'muhammad hafidz', '2004-06-22', 'RPL', 'islam', 'yasmin'),
+(19, '34124', 'tuit', '2021-06-10', 'MM', 'katolik', 'medan'),
+(20, '1341234', 'budi', '2021-06-17', 'TKJ', 'Kong Hu Cu', 'depok');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `posiswa`
+-- Indexes for table `dsiswa`
 --
-ALTER TABLE `posiswa`
+ALTER TABLE `dsiswa`
   ADD PRIMARY KEY (`ID`);
 
 --
@@ -59,10 +63,10 @@ ALTER TABLE `posiswa`
 --
 
 --
--- AUTO_INCREMENT for table `posiswa`
+-- AUTO_INCREMENT for table `dsiswa`
 --
-ALTER TABLE `posiswa`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+ALTER TABLE `dsiswa`
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
